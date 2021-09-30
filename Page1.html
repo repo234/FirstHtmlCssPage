@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake shop</title>
+  </head>
+ 
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+    }
+
+    #main {
+      border: solid pink;
+      height: 2052px;
+    }
+    #header {
+      border: solid none;
+      background-color: pink;
+      height: 40px;
+      display: block;
+      text-align: center;
+      padding: 10px;
+      font-size: 40px;
+      font-weight: bold;
+      font-family: "Ephesis", "Times New Roman", Times, serif;
+    }
+    .logo {
+      border: none;
+      width: 38%;
+      height: 15%;
+      display: inline-block;
+    }
+    #logoimg {
+      width: 505px;
+      height: 282px;
+      object-fit: none;
+      object-position: -67px -171px;
+    }
+    #nav {
+      border: none;
+      display: inline-block;
+      height: 10%;
+      width: 56%;
+      position: absolute;
+      top: 250px;
+      left: 585px;
+    }
+    .list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      padding-left: 0px;
+    }
+    #menu {
+      border: none;
+      width: 61%;
+      height: 15%;
+      float: right;
+    }
+    li {
+      display: inline;
+    }
+    li,
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 10px;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: "Ephesis", "Times New Roman", Times, serif;
+    }
+    a:hover {
+      color: skyblue;
+    }
+    .pic {
+      border-bottom: solid yellow;
+      height: 400px;
+      background-color: pink;
+      position: relative;
+    }
+    .pict {
+      width: 1500px;
+      height: 400px;
+      object-fit: cover;
+      object-position: 0px -145px;
+    }
+    .imgtxt {
+      border: none;
+      width: 550px;
+      margin-left: 60px;
+      position: absolute;
+      bottom: 100px;
+      font-size: 45px;
+      text-align: center;
+      color: purple;
+      font-weight: 600;
+      font-family: "Ephesis", "Times New Roman", Times, serif;
+    }
+    .discount {
+      border: solid purple;
+      height: 50px;
+      width: 200px;
+      position: absolute;
+      bottom: 45px;
+      margin-left: 240px;
+      border-radius: 40px;
+      background-color: rgb(245, 81, 109);
+      font-size: 17px;
+      font-weight: bold;
+      color: purple;
+    }
+    button:hover {
+      background-color: skyblue;
+    }
+    .txt {
+      bottom: 10px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px;
+    }
+
+    .customized {
+      position: relative;
+      border-bottom: solid rgb(221, 4, 4);
+      height: 222px;
+      width: 1500px;
+      background-image: url("./imagess/img2.jpg");
+      background-size: 366px 434px;
+      background-repeat: repeat-x;
+      font-weight: bolder;
+      font-family: "Architects Daughter", "Times New Roman", Times, serif;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 132px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    .txtimg {
+      border: solid;
+      height: 75px;
+      width: 1300px;
+      margin-left: 100px;
+      background-color: skyblue;
+      border-style: dotted;
+    }
+    .btn2 {
+      height: 40px;
+      width: 300px;
+      border-radius: 20px;
+      background-color: white;
+      border-color: blue;
+      color: rgb(50, 44, 143);
+
+      font-size: 20px;
+      position: relative;
+      bottom: 60px;
+      left: 110px;
+      font-weight: bold;
+      font-family: "Architects Daughter", "Times New Roman", Times, serif;
+    }
+
+    .pic1 {
+      border: solid red;
+      width: 550px;
+      height: 300px;
+      display: inline-block;
+      margin: 70px;
+      margin-left: 150px;
+    }
+    .pic2 {
+      border: solid red;
+      width: 530px;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      top: 80px;
+      left: 15px;
+    }
+    .giftpic {
+      width: 530px;
+      height: 300px;
+      object-fit: cover;
+      object-position: -4px -65px;
+    }
+    .custxt {
+      font-size: 60px;
+      font-weight: bolder;
+      font-family: "Ephesis", "Times New Roman", Times, serif;
+      position: relative;
+      bottom: 200px;
+      left: 70px;
+      color: #fcfcfc;
+    }
+    .gifttxt {
+      left: 0px;
+      bottom: 300px;
+      text-align: center;
+    }
+    
+    .about {
+      border: solid;
+      display: inline-block;
+      height: 300px;
+      margin-left: 45px;
+      background-color: skyblue;
+      border-color: white;
+      width: 300px;
+      position:relative;
+      margin-top: 30px;
+    }
+    .aboutus {
+      border: none;
+      background-image: url("./imagess/back.jfif");
+      background-size: 378px 216px;
+      height: 430px;
+    }
+    #footer {
+      position: sticky;
+      bottom:0;
+
+      border: solid white;
+      height: 35px;
+      background-color:pink;
+
+      text-align: center;
+      font-size: 25px;
+font-family: "Architects Daughter", "Times New Roman", Times, serif, 'Times New Roman', Times, serif;
+    }
+    .cuspic {
+      height: 300px;
+      width: 550px;
+    }
+    .we {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 20px;
+      color: white;
+      font-style: italic;
+      background: skyblue;
+      border: solid white;
+    }
+    p {
+      font-size: 20px;
+      padding:30px;
+      text-align: center;
+      position:relative;
+      bottom:30px;
+      color:white;
+      font-family:"Architects Daughter", "Times New Roman", Times, serif ;
+    }
+  
+    h3 {
+      text-align: center;
+      font-size: 40px;
+      font-family: "Ephesis", "Times New Roman", Times, serif;
+      color: white;
+    }
+    .p4{
+      bottom:25px;
+    }
+    .p3{
+      bottom:50px;
+    }
+    .p1{
+      bottom:25px;
+    }
+  </style>
+  <body>
+    <div id="header">..~ Welcome to our shop ~..</div>
+    <div id="main">
+      <div class="logo">
+        <img id="logoimg" src=".\imagess\logo2.jpg" alt="logo here" />
+      </div>
+      <div id="menu">
+        <div id="nav">
+          <ul class="list">
+            <li><a href="">Homepage</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">Contact us</a></li>
+            <li><a href="">User</a></li>
+            <li><a href="">search</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pic">
+        <img src=".\imagess\caku.webp" alt="uploading...." class="pict" />
+        <div class="imgtxt">
+          Make your day more exciting with us<br />Celebrate birthday<br />Make
+          memories<br />Make memories<br />Share moments<br />
+        </div>
+        <div>
+          <button class="discount">Get 10% DISCOUNT</button>
+        </div>
+        <div class="imgtxt , txt">On your first order</div>
+      </div>
+      <div class="customized">
+        <div class="txtimg">
+          ....~ natural handmade desserts that uplift your mood~...
+        </div>
+      </div>
+      <div class="twopic">
+        <div class="pic1">
+          <img
+            src=".\imagess\picc.jpg"
+            alt="error uploading..."
+            class="cuspic"
+          />
+
+          <button class="btn2">Customized your cake</button>
+          <div class="custxt">You designed we bake</div>
+        </div>
+        <div class="pic2">
+          <img src=".\imagess\pic1.webp" alt="uplaoding..." class="giftpic" />
+          <button class="btn3 btn2">Customized your gift box</button>
+          <div class="gifttxt custxt">Give your loveones a sweet surprise</div>
+        </div>
+      </div>
+      <div class="aboutus">
+        <div class="we">Why we?</div>
+        <div class="p1 about">
+          <h3>Tradition</h3>
+          <p>
+            Our recipies are inspired by European patisseries traditions.This
+            make our products so unique and almost too pretty to eat
+          </p>
+        </div>
+        <div class="p2 about">
+          <h3>Quality</h3>
+          <p>
+            All products are fresh and free from artificial flavours.Rich in
+            flavour,frosted using butter cream and chocolate.
+          </p>
+        </div>
+        <div class=" p3 about">
+          <h3>Creativity</h3>
+          <p>
+            Our desserts are embllished with chocolate gun and tools that
+            enhance their look.
+          </p>
+        </div>
+        <div class="p4 about">
+          <h3>Passion</h3>
+          <p>
+            Art is something that you can create out anything new.We beleive
+            that what is made with love goes to the heart.
+          </p>
+        </div>
+      </div>
+      <div id="footer">
+        <footer class="foot">Look forward for you</footer>
+      </div>
+    </div>
+  </body>
+</html>
